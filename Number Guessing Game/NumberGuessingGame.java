@@ -71,9 +71,7 @@ public class NumberGuessingGame {
                         options[0]);
 
                 if (n == 0) {
-                    rand = generateNumber();
-
-                    System.out.println(rand);
+                    rand = generateNumber();      
                     attempts = 5;
                     label2.setText(String.format("Attempts: %d ", (attempts)));
                 }
@@ -117,7 +115,6 @@ public class NumberGuessingGame {
                     attempts = 5;
                     label2.setText(String.format("Attempts: %d ", (attempts)));
                     rand = generateNumber();
-                    System.out.println(rand);
                 } else {
                     attempts = 1;
                     label2.setText(String.format("Attempts: %d ", (attempts)));
